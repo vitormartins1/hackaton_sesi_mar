@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>MAR - Exposicao Virtual Local</title>
+	<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.thumbnail {
+			margin-bottom:7px;
+		}
+		ul {
+			list-style-type: none;
+		}
+		#footer {
+  background-color:#414141;
+}
+
+#footer{
+    height: 100px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+body {
+		background-color: #bdc3c7;
+	}
+.content {
+	background-color: #bdc3c7;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.jumbotron {
+	background-color: #ecf0f1;
+}
+.div
+{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.img {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto; 
+    min-height: 100%;
+    min-width: 100%;
+}
+.lista {
+	position: relative;
+	height: 520px;
+	overflow: hidden;
+}
+	
+.info {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+	</style>
+</head>
+<body>
+
+<section ng-controller="indiceController" ng-init=>
+
+<ng-include
+  src="'parts/indice.html'"
+  >
+...
+</ng-include>
+</section>
+
+</body>
+
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/angular-mousewheel/mousewheel.js"></script>
+<script src="lib/angular/angular-ui-router.js"></script>
+<script src="lib/angular/angular-touch.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/indice.js"></script>
+</html>

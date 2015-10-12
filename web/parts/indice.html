@@ -1,0 +1,103 @@
+<!--Oi
+
+<hr></hr>-->
+<div class="content">
+	<!--<div class="row">
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+        <a href="#">
+             <img src="http://placehold.it/800x600" class="thumbnail img-responsive">
+        </a>
+    </div>
+	</div>-->
+	<div class="jumbotron">
+  		<h1 align="center"> MAR <small>Exposição Virtual</small></h1>
+	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Novo Núcleo</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="input-group">
+			  <span class="input-group-addon" id="basic-addon1">Nome</span>
+			  <input type="text" class="form-control" placeholder="" aria-describedby="nomeNucleo">
+			</div> </br>
+	        <div class="input-group">
+			  <span class="input-group-addon" id="basic-addon1">Descrição</span>
+			  <input type="text" class="form-control" placeholder="" aria-describedby="descricaoNucleo">
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	        <button type="button" class="btn btn-primary">Criar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<div class="container">
+	<div class="row">
+		<ul id="indice">
+			<li class="" ng-repeat="item in obras | array | orderBy:sortorder | limitTo:limitPhotos"><!--<li class="lista" ng-repeat="item in obras | array | orderBy:sortorder | limitTo:limitPhotos">-->
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img ng-src="http://museumar.esy.es/Fotos/{{item.id}}.jpg" class="img-responsive" data-toggle="collapse" href="#{{item.id}}" aria-expanded="false" aria-controls="{{item.id}}">
+						<div class="caption collapse" id="{{item.id}}"><!--<div class="caption collapse info" id="{{item.id}}">-->
+						<ol class="breadcrumb">
+						  <li><a href="#"><span class="label label-info">{{item.nucleo}}</span></a></li>
+						  <!--<li><a href="#"><span class="label label-success">Amor</span></a></li>
+						  <li> <a href="#"><span class="label label-warning">Barroco</span></a></li>
+						  <li> <a href="#"><span class="label label-danger">Arcanoid</span></a></li></h6>-->
+						</ol>
+							<!--<nav class="navbar navbar-default">
+								<div class="container-fluid">
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+								  <ul class="nav navbar-nav">
+							        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+							        <li><a href="#">Barroco</a></li>
+							        <li><a href="#">Sonhos</a></li>
+							        <li><a href="#">Amor</a></li>
+							      </ul>
+
+							      <ul class="nav navbar-nav navbar-right">
+							        <li class="dropdown">
+							          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">+ Núcleo <span class="caret"></span></a>
+							          <ul class="dropdown-menu">
+							            <li><a href="#">Viagem Astral</a></li>
+							            <li><a href="#">Aquarela</a></li>
+							            <li><a href="#">Cultura Indígena</a></li>
+							            <li role="separator" class="divider"></li>
+							            <li data-toggle="modal" data-target="#myModal"><a href="#">Adicionar Núcleo</a></li>
+							          </ul>
+							        </li>
+							      </ul>
+							    </div>
+								</div>
+							</nav>-->
+							<h3>{{item.nome}}</h3>
+							<p>{{item.descricao}}</p>
+							<h4 align="right">{{item.autor}}</h4>
+							<div align="center"><span class="badge">{{item.likes}} votos</span></div>
+							<!--<p><a href="#" class="btn btn-primary" role="button" ng-click="likeButton(item)" ng-show="userDontVoteYet()"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a></p>-->
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <form class="navbar-form navbar-right" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Procure outros núcleos...">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</nav>
+	-->
+</div>
